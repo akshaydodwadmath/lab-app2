@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p><strong>7.10.1: Title of the experiment:  </strong>Bode plot  without compensation,  using MATLAB     <br>
+  <strong>                    </strong>software</p>
+<p><strong>7.10.2: Aim of the experiment:</strong> <strong> </strong>Plotting of Bode plot  without compensation for   <br>
+  <strong>              </strong>the given  transfer function and verification using theoretical calculations, Using MAT  <br>
+  LAB software<strong>.</strong></p>
+<p><strong>7.10.3: List of equipments required to conduct the experiment with  their</strong>                       <br>
+  <strong>Specification:</strong><br>
+  Pentium based PC and MATLAB  software version 5.1 or 6.1<br>
+  <br>
+  <strong>7.10.4: Experimental setup with naming of all parts: -------Not  required------</strong></p>
+<p><strong>7.10.5: Theoretical  background for the experiment/validation of the experiment</strong>:<strong></strong><br>
+  In Bode method Logarithmic values  of magnitude are to be plotted against logarithmic values of frequencies. Such  values are called logarithmic plots which allow us to show wide range of  variations on a single paper, so in general Bode plot consists of two plots:</p>
+<ol>
+  <li>Magnitude expressed in logarithmic  values against logarithmic values of frequency called magnitude plot.</li>
+  <li>Phase angle in degrees against logarithmic values of frequency called  phase angle plot.</li>
+</ol>
+<p><strong>7.10.6: Design:  -------Not required------        </strong></p>
+<p>&nbsp;</p>
+<p><strong>7.10.7: Procedure  to carry out the experiment:</strong></p>
+<p><strong> </strong>The following program is entered<br>
+  <br>
+  % MATLAB program to plot bode diagram<br>
+  % Bode diagram<br>
+  num=[0          0        25];<br>
+  den =[1          4        25];<br>
+  % numerator and denominators of the T.F<br>
+  %bode (num, den) draws the bode diagram<br>
+  bode (num, den)<br>
+  title (&ldquo;Bode diagram&rdquo;)</p>
+<p><strong>7.10.8: Table  of observation:----Not required-------</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>7.10.9: Specimen  calculations:</strong>           </p>
+<p>                                    <strong> </strong><br>
+  25                                     1<br>
+  G (S)    =    ---------------        G(S) =  ------------<br>
+  S2+45+25                      1+ 4   S + S2<br>
+  ---       ----<br>
+  25       25<br>
+  Comparing with       -------------------<br>
+  S2 + 2 ξ WnS + Wn2</p>
+<p>        Wn2 =  25         2 ξ Wn = 4<br>
+  Wn = 5             ξ = 0.4</p>
+<p>Magnitude Plot</p>
+<ol>
+  <li>Contribution due to K</li>
+</ol>
+<p>20 log (1)  = 0db<br>
+  2)  Quadratic pole 1-         Wc1 = 1   = 1 rad / sec<br>
+  ----                  ----                <br>
+  1+ S                 1</p>
+<p>Quadratic pole contributes –40db/dec individually &amp; will  continue till ∞ as there is no other factor</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>7.10.10: Plotting the graph: </strong><br>
+  <strong><img width="191" height="111" src="clip_image002_0008.jpg"></strong><br>
+  <strong>7.10.11: Discussion  and conclusion:</strong> <br>
+  From the above experiment it has been observed that  MATLAB will take less computational time for the Bode diagram compensation.  Also using MATLAB, analysis can be done very easily.</p>
+</body>
+</html>

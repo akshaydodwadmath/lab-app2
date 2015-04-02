@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p><strong>7.1.1: Title  of the experiment:  </strong> Frequency response and  transient response of a second order  <br>
+  System</p>
+<p><strong>7.1.2:  Aim of the experiment: </strong>To study the frequency response and transient  <br>
+  response of second order system  using RLC circuit, for a step input.</p>
+<p><strong>7.1.3:   List of equipments:</strong><br>
+  Sl no         Item            Specification                 Quantity</p>
+<p>               1)          AFO            10Hz-1MHz/15Vrms              1<br>
+  2)          C R O             0 –20MHz/80Vp-p                1<u></u><br>
+  3)         Inductor        70mH                                     1<br>
+  4)         Capacitor       0.  01MF.                               1<br>
+  5)          Resistors        2k, 6.3k, 5.3k                         1  each       </p>
+<p><strong>7.1.4: Experimental setup:</strong><br>
+</p>
+<p align="center"><strong><img width="281" height="180" src="clip_image002_0016.jpg"></strong><br>
+  for  z  &lt;1                            for  z &gt;1                           for  z =1<br>
+  L=70mH                           L=70mH                           L=70mH<br>
+  C=0.01μf                          C=0.01μf                          C=0.01μf<br>
+  R=2KΩ                             R=6.3KΩ                          R=5.3KΩ</p>
+<p><strong>7.1.5: Theory:</strong><br>
+  The closed loop transfer Funston for second order system is given by<br>
+  Vo(s)                   Wn2<br>
+  ----------------     =     ---------------------------------<br>
+  Vi(s)        S2 +2  ξ  WnS +Wn2</p>
+<p>
+&nbsp;          <img width="554" height="166" src="clip_image002_0004.gif">                                                                                            Vo<br>
+&nbsp;
+</p>
+<p>We have<br>
+V0                       1<br>
+-----  -      =     --------------<br>
+Vi           LCS2  +RCS +1<br>
+Comparing this equation with second order system Transfer fuction  is:</p>
+<p>C(S)                   Wn2<br>
+  ------  =           --------------<br>
+  R(S)                S2+2  ξWns +Wn2</p>
+<p>The dynamic behavior of second order system can be described in  terms of two parameters ξ &amp; Wn.<br>
+  If  0 &lt; ξ  &lt; 1 the closed loop poles are complex  conjugates and lie in the left half of splane the system is called as under  damped and the transient response is oscillatory<br>
+  The system is which is having ξ =1 the system is called critically  damped the over damped system corresponds to ξ =1 the transient response of  critically damped and over damped system do not oscillate if ξ =0 the transient  response does not die out.</p>
+<p>The transient response of 2nd order system is done by  considering following .1) delay time 2) Rise time 3) peak time 4) Maximum  overshoot 5) settling time</p>
+<p><strong>Delay time (td</strong>):<u> </u>The delay time is time required for the response to reach  half the final<u></u><br>
+  Value the very first time.</p>
+<p><strong>Rise time</strong>: <strong>(Tr)</strong>: Time required for  response to rise from 10% to 90% of its final value.</p>
+<p><strong>Peak<u> </u>time<u> </u>(Tp</strong>): The peak time is the time required for the response to reach the  first peak of the over shoot</p>
+<p><strong>Maximum Over<u> </u>shoot  (Mp):</strong> It is the maximum peak value of the response  curve measured from unity. It is delayed by</p>
+<p>Mp= C (tp) – C (∞)     x 100 %<br>
+  ------------------<br>
+  C(∞)<br>
+  Settling time: The settling time is the time required to for the  response curve to reach &amp;                stay with in a range about the final value of size specified by absolute  % of final value.</p>
+<p><strong>7.1.6: Design equations</strong>:</p>
+<p>                 1                                 R            C<br>
+  Wn =    --------               ξ   =       ----- √   ----<br>
+  √LC                                 2           L</p>
+<p>θ = tan-1 √1- ξ2<br>
+  -------<br>
+  ξ</p>
+<p>Wd = Wn √1- ξ2</p>
+<p>&nbsp;</p>
+<p>Tr = Π– <img width="554" height="166" src="clip_image002_0005.gif">θ<br>
+  --------<br>
+  Wd</p>
+<p> 1) For ξ= 0.37 i.e. &lt;1,  C=0.01x10uf and L=70mH</p>
+<p> 0.37   =          R         0.01X10-6<br>
+  -----   √    -----------<br>
+  2          70 x 10-3</p>
+<p>R    = 2K</p>
+<p>              Π– θ<br>
+  Tr =     ---------<br>
+  Wd</p>
+<p>&nbsp;</p>
+<p>                     Π – tan-1  (√1-(0.37)2<br>
+  ---------<br>
+  0.37<br>
+  Tr = ------------------------------- ----------<br>
+  1<br>
+  --------------      x   (√1-(0.37)2<br>
+  √70x10-3x0.01x10-6</p>
+<p>= 56 μ Sec</p>
+<p>Mp = e -Π ξ  / √ 1-  ξ2 x 100</p>
+<p>= e - Π(0.37)   / √ 1-(0.37)2 x 100</p>
+<p>= 0.286 x 100</p>
+<p>= 28.6%<br>
+  4<br>
+  Ts =    -----     for 2% tolerance<br>
+  ξ Wn<br>
+  4<br>
+  =      -----<br>
+  (0.37)    1<br>
+  -------<br>
+  26.45 x 10-6</p>
+<h1>&nbsp;</h1>
+<h1>Ts = 0.28  m sec.</h1>
+<p>Designed valves for ξ &lt; 1</p>
+<p>L = 70 mH<br>
+  Fre = 570 Hz<br>
+  C = 0.01μF<br>
+  R= 2 KΩ<br>
+  ξ = 0.37<br>
+  2) For ξ &gt; 1(over damped)<br>
+  R           0.01 μF<br>
+  1.2 =     ----√     ------------   </p>
+<ol>
+  <li>70 mH</li>
+</ol>
+<p>R = 6.3 KΩ<br>
+  Designed values <br>
+  ξ = 1.2<br>
+  R = 6.3 KΩ<br>
+  C = 0.01 μF<br>
+  Fre = 570 Hz<br>
+  L = 70 mH</p>
+<p>           3)  For ξ = 1(critically damped)<br>
+  <br>
+  R       0.01 x 10-6<br>
+  1 = -----√ --------------<br>
+  2      70 x 10-3<br>
+  R = 5.3 KΩ.<br>
+  Designed values <br>
+  Fin = 570 Hz<br>
+  R = 5.3 KΩ<br>
+  L = 70 mH<br>
+  C = 0.01 μF<br>
+  ξ = 1</p>
+<p>4) For ξ = 0<br>
+  R = 0</p>
+<h1>&nbsp;</h1>
+<p><strong>7.1.7: </strong><strong>Procedure:</strong></p>
+<p>1) Circuit connections are made as shown in circuit diagram<br>
+  2) The T.F of second order system is compared with T.F of the given  circuit and for   <br>
+  different values of  ξ, the resistance values are calculated.<br>
+  3) The input is given through AFO &amp; output is observed on CRO.<br>
+  4) The frequency response for ξ = 1 is determined. <br>
+  5) The transient response of the system is  observed on digital storage oscilloscope, for  <br>
+  different ξ values i.e.  less than 1, greater than 1&amp; equal to 1.<br>
+  6) The transient specifications for different values of ξ are  calculated.<br>
+  7) Plot frequency v/s phase and frequency  v/s output voltage.</p>
+<p><strong>7.1.8:  Table of observation: </strong><br>
+  <em> a) Frequency    response </em><br>
+  Vpp = 1V (constant)       <br>
+</p>
+<table border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="108" valign="top"><br>
+      fin (Hz ) </td>
+    <td width="144" valign="top"><p>Vo(volts)</p></td>
+    <td width="156" valign="top"><p>       Phase(degrees)</p></td>
+  </tr>
+  <tr>
+    <td width="108" valign="top"><p>&nbsp;</p></td>
+    <td width="144" valign="top"><p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p></td>
+    <td width="156" valign="top"><p>&nbsp;</p></td>
+  </tr>
+</table>
+<p>            <br>
+  <em>b)<strong> Transient response:</strong></em><strong></strong><br>
+  (To be noted from DSO)</p>
+<ol>
+  <li>ξ &lt; 1(under damped)</li>
+</ol>
+<p>Tr =         μ Sec<br>
+  Vpp =      V<br>
+  Mp =       mV<br>
+  Ts =         m sec</p>
+<ol>
+  <li>ξ &gt; 1(over damped)</li>
+</ol>
+<p>Tr =         μ Sec<br>
+  Vpp=       V</p>
+<ol>
+  <li>ξ = 1(critically damped)</li>
+</ol>
+<p>Tr =          μ Sec<br>
+  Vpp =        V</p>
+<ol>
+  <li>ξ = 0</li>
+</ol>
+<p>Tr =       u Sec<br>
+  Vp-p=    V.</p>
+<p><strong>7.1.9:  Specimen calculations:</strong>  ------not required----</p>
+<p>&nbsp;</p>
+<p><strong>7.1.10:  Plotting of Graph:      </strong><br>
+  <em>Frequency response</em>:<br>
+  Gain Vs Frequency                               Phase Vs  frequency<br>
+  <img width="361" height="293" src="clip_image003_0003.gif"><strong>                                      </strong><br>
+  <em>Transient response</em><br clear="ALL">
+</p>
+<p>               </p>
+<p>&nbsp;</p>
+<p><strong>&nbsp;</strong></p>
+<p>&nbsp;</p>
+<p><br>
+  <strong>   </strong><br>
+  <br>
+  <strong>7.1.11:  Conclusion:</strong> <br>
+The frequency response  of 2nd order shows that as a frequency will increase the output will  decreases and also from the transient response, we have observed the various  parameters like delay time, rise time, peak time, settling time.</p>
+&nbsp;
+<p>&nbsp;</p>
+</body>
+</html>

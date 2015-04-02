@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p><strong>7.3.1: Title  of the experiment: </strong>Frequency response of a lag  network<strong></strong></p>
+<p><strong>7.3.2: Aim of  the experiment: </strong>To determine frequency response of  a lag <br>
+  network<strong>.</strong></p>
+<p><strong>7.3.3: List of  equipments:</strong></p>
+<p>           Sl no                Item                        Specification                 Quantity </p>
+<p>              1)                AFO                        10  Hz-1MHz/15Vrms           1 <br>
+  2)                C R O                       0-20 MHz/80Vpp                1 <br>
+  3)                Resistors                  10. k                                     1  <br>
+  4)               Capacitor                   0.1 micro fara                      1 </p>
+<p><strong>          </strong>     <br>
+  <strong>7.3.4:  Experimental Setup:</strong></p>
+<p>&nbsp;</p>
+<p align="center"><strong><img width="200" height="165" src="clip_image002_0019.jpg"></strong></p>
+<p><strong>7.3.5: Theory:</strong></p>
+<p>The primary function of lag compensation is to provide  attenuation in the high                 Frequency range to give a system sufficient phase margin. The phase lag  characteristic is of no consequence in lag compensator. The lag compensators  are low-pass filters therefore it permits a high gain at low Frequencies, which  improves steady state &amp; also improves phase margin.  The improve in phase margin is due to  reduction of gain in the higher critical range of frequencies.  Since lag compensator tends to integrate the  input signal it acts appropriately as proportional plus integral controller,  because of this lag network becomes less stable.<strong>                                </strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>    7.3.6:  Design equations:</strong><br>
+  The T.F for the lag N/W is given by  <u></u><br>
+  <strong>       </strong><br>
+  <strong>                                    </strong>Vo(s)       R2 + 1/sc<br>
+  ------   =   --------------<br>
+  Vi(s)        R1 +R2 +1/sc<br>
+  1               S+ (1/R2c)<br>
+  = ---------- (   ------------------------------------------    )<br>
+  R1+R2          S +(R1+R2) / R2       x    R2C   <br>
+  ----------    <br>
+  R2                              <br>
+  Let   τ = R2 C&gt;0 and    <br>
+  <br>
+  R1+R2            <br>
+  β =      ----------     &gt;1  <br>
+  R2  </p>
+<p>                       Vo(s)         1          S + 1/ τ <br>
+  -------    =   -----  (   -----------   )<u></u><br>
+  Vi(s)          β         S + 1/ β τ</p>
+<p>                Also β =  1+sinQm<br>
+  -------------<br>
+  1-sinQm<br>
+  <br>
+  Assume       Qm = -450         τ =0.2msec   C =   0.1 μF <br>
+  Sin Qm=  β-1<br>
+  ------<br>
+  β+1</p>
+<p>   0.707 = β-1<br>
+  ------<br>
+  β+1</p>
+<p>    β = 5.83</p>
+<p>            R1+R2<br>
+  β = ----------<br>
+  R2</p>
+<p>                2K + R1<br>
+  5.83 = ----------<br>
+  R2 </p>
+<p>    R1 = 10 KΩ<br>
+  <br>
+  τ              0.2 msec           <br>
+  R2    =  ------ =     ------------ = 2 KΩ<br>
+  C             0.1 μF</p>
+<p>            1<br>
+  λm =   ---------        =  330 Hz<br>
+  2-Π√ β<br>
+  Designed Values: <br>
+  Fm=330Hz <u></u><br>
+  β =  5.83 <u></u><br>
+  τ = 0.2m  sec <u></u><br>
+  Re = 2 KΩ<u></u><br>
+  R1 =10 KΩ.<br>
+  The input signal it acts appropriately as  proportional plus integral controller .Because   Of this lag N/w becomes less stable.<br>
+  Since β &gt;1  the steady state output has lagging   phase angle with respect to the   sinusoidal input &amp; hence the name lag network  <br>
+  <strong>7.3.7: Procedure:</strong></p>
+<ol>
+  <li>Circuit connections are made as  per circuit diagram. </li>
+  <li>The input is given through AFO  and the output is observed on CRO. </li>
+  <li>The input voltage is kept  constant &amp; the output voltage &amp; phase are noted down </li>
+</ol>
+<p>       at varying input frequencies.</p>
+<ol>
+  <li> Plot of frequency v/s phase &amp;frequency v/s  output voltage is plotted</li>
+</ol>
+<p><strong>&nbsp;</strong></p>
+<p><strong>7.3.8:</strong> <strong>Table of observation:</strong><br>
+  <em>         Frequency  response  </em><br>
+  <br>
+  Vin  = 1Vpp (constant)<br>
+</p>
+<table border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="144" valign="top"><br>
+      fin (Hz) </td>
+    <td width="132" valign="top"><p>Vout(volts)</p></td>
+    <td width="180" valign="top"><p>   Phase(degrees)<u>                                                                                              </u></p></td>
+  </tr>
+  <tr>
+    <td width="144" valign="top"><p>&nbsp;</p></td>
+    <td width="132" valign="top"><p>&nbsp;</p></td>
+    <td width="180" valign="top"><p>&nbsp;</p></td>
+  </tr>
+</table>
+<p><strong>&nbsp;</strong></p>
+<p><strong>7.3.9: Specimen  calculations: ---- Not required ------</strong></p>
+<p><strong>7.3.10: Plotting of graph:</strong></p>
+<p><strong>&nbsp;</strong>Gain Vs Frequency</p>
+<p><img width="146" height="86" src="clip_image001_0004.gif">    </p>
+<p>Phase Vs Frequency</p>
+<p><img width="170" height="98" src="clip_image001_0006.gif"><br clear="ALL">
+</p>
+<p>  <br>
+</p>
+<br clear="ALL">
+<br>
+                                                                                            
+<p><strong>7.3.11: Conclusion:        </strong></p>
+<p>           The primary  function of a lag compensator is to provide attenuation in the high frequency  range to give a system sufficient phase margin.   The phase lag characteristic is of no consequence in lag compensator.  The lag compensators are low pass filters therefore it permits a high gain at  low frequencies, which improves steady state and also improves phase margin. In  the above expt, we can observe that    β  is a important parameter, and  its value will decide the stability.</p>
+</body>
+</html>

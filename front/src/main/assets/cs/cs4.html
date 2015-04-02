@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p><strong>7.4.1:  Title of the experiment: </strong>Frequency response of a lead-lag network<strong></strong></p>
+<p><strong>7.4.2: Aim of  the experiment: </strong>To determine frequency response of  a lead-lag <br>
+  network<strong></strong></p>
+<p><strong>7.4.3: List of  equipments:</strong></p>
+<p>           Sl no                   Item                 Specification                 Quantity </p>
+<p>              1)                 AFO                    10  Hz-1MHz/15Vrms             1 <br>
+  2)                 C R O                   0-20 MHz/80Vpp                  1 <br>
+  3)                Resistors               6k, 2K                                    1 each <br>
+  4)               Capacitor               0.1 micro farad                       1 </p>
+<p><strong>7.4.4:  Experimental Setup with naming of all parts:</strong><br>
+  <strong><img width="231" height="171" src="clip_image002_0020.jpg"></strong><br>
+  <strong>7.4.5: Theory:</strong></p>
+<p>                          Lead  compensation is basically speeds up the response and increases the stability of  the system; Lag compensation improves the steady state accuracy of the system  but reduces the speed of response.<br>
+  If improvements in both transient response &amp; steady state  response are desired then both a lead compensator &amp; a lag compensator may  be used simultaneously.  Lag –lead  combines advantages of both lag &amp; lead Compensations since lag-lead  Compensator produces 2 poles &amp; two zeros such compensation increases the  order of System by 2 unless cancellation of poles &amp; zeros occurred.<br>
+  <strong>                           </strong><br>
+  <strong> 7.4.6: Design</strong>:</p>
+<p>                  Vo(s)       R+ 1/C2s</p>
+<h1>                  ------ =    ----------------</h1>
+<p>                   Vi(s)        R2 +1/sC2 + R1+ sC1<br>
+  ----------<br>
+  R1C1s+1<br>
+  <br>
+  R1 C1 = τ1<br>
+  R2 C2 = τ2 <br>
+  R1 R2 C1 C2= α β τ1 τ2</p>
+<p>                      1                                                      τ               0.6 x 10-3<br>
+  β =   ----- &gt; 1                                R1 = ----    =       -------------- = 6 KΩ<br>
+  α                                                      C1               0.1 x 10-6<br>
+  τ             0.2x 10-3<br>
+  τ    = R1C1 = 0.6 msec                   R2 =      ---      =    ------------ = 2 KΩ<br>
+  τ    = R2C2 = 0.2 msec                             C2           0.1x 10-6</p>
+<p>&nbsp;</p>
+<p>            1<br>
+  f = -------------<br>
+  2Π  √ τ1 τ2  <br>
+  1<br>
+  = ------------<br>
+  2 Π √ 0.12 μF</p>
+<p> = 459 Hz<br>
+  = 460 Hz                                     <br>
+  <br>
+  α = 0.17<br>
+  β = 5.83<br>
+  α = 1/ β = 1</p>
+<p>Designed Values <br>
+  β =5.83 <br>
+  α =0.17 <br>
+  f=460Hz <br>
+  R1=6k ohms <br>
+  C1=0.1 μF<br>
+  C2=0.1 μF<br>
+  R2=2 KΩ<br>
+  The  T F   for the lag –lead network is given by   <br>
+  <br>
+  Vo (s) =             R2+1/sC2<u>  </u><br>
+  ------         ------------------------------<br>
+  Vi (s)                 1        R1+/sC1<u></u><br>
+  R +---- + -------------<br>
+  SC2    R1+1/s C1 </p>
+<p>            Where             τ =R1 C1 <br>
+  τ =R2C2 <br>
+  R1C1R2C2= α β τ1 τ2 </p>
+<p><strong>7.4.7: Procedure:</strong>    </p>
+<ol>
+  <li>Circuit connections are made as  per the circuit diagram. </li>
+  <li>The input is given through AFO  and the output is observed on CRO. </li>
+  <li>The input voltage is kept  constant &amp; the output voltage &amp; phase are noted down </li>
+</ol>
+<p>             at varying input frequencies.</p>
+<ol>
+  <li> Plot of frequency v/s phase &amp;frequency v/s  output voltage is plotted</li>
+</ol>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>7.4.8: Table</strong><strong> of observation:</strong><br>
+  <strong><em>           Frequency response:</em></strong><br>
+  Vpp= 1V (constant)<br>
+</p>
+<table border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="120" valign="top"><br>
+      fin(Hz)<strong></strong></td>
+    <td width="120" valign="top"><p>Vo(volts)<strong></strong></p></td>
+    <td width="168" valign="top"><p>   phase ( degrees)  <strong></strong></p></td>
+  </tr>
+  <tr>
+    <td width="120" valign="top"><p>&nbsp;</p></td>
+    <td width="120" valign="top"><p>&nbsp;</p></td>
+    <td width="168" valign="top"><p>&nbsp;</p></td>
+  </tr>
+</table>
+<p><strong>&nbsp;</strong></p>
+<p><strong>7.4.9:</strong> <strong>Specimen  calculations:</strong><strong> ---- Not required  ------</strong></p>
+<p><strong>7.4.10: Plotting of graph: </strong></p>
+<p>Gain Vs Frequency</p>
+<p><img width="146" height="86" src="clip_image001_0007.gif"></p>
+<p>Phase Vs Frequency</p>
+<p><img width="170" height="98" src="clip_image001_0008.gif"></p>
+<p><strong>7.4.11: Discussion  and conclusion:    </strong>          <br>
+  Lead compensation is basically speeds up the response  and increases the stability of the system. Lag compensation improves the steady  state accuracy of the system but reduces the speed of the responses.<br>
+Lag-lead combines the advantage of both lag &amp; lead  compensations.  </p>
+<p>&nbsp;</p>
+</body>
+</html>

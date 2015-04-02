@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p><strong>7.5.1: Title  of the experiment: </strong>Design of relay driving circuits  using LDR and Optocouplers. </p>
+<p><strong>7.5.2: Aim of  the experiment: </strong>To design relay driving circuits  using photo  <br>
+  devices like optocoupler  and LDR.</p>
+<p><strong>7.5.3: List  of equipments:</strong><br>
+  Sl No.                       Item                            Specification                 Quantity</p>
+<p>             1)                             Diode                              IN 4001                         01<br>
+  2)                            Transistor                       2N2222 A                      01 <br>
+  3)                             Resistors                         10k ohm                       01<br>
+  5 K ohm                        01<br>
+  1 K ohm                        03<br>
+  4)                           Relay                                12 V, 200 ohm<br>
+  5)                           Fixed power supply          +/-12V, 5V/2A             01<br>
+  6)                           Variable power supply       0-30V/2A<br>
+  7)                           LDR                                   10  MΩ                        01<br>
+  8)                           Optocoupler                         MCT2E                          01 </p>
+<p><strong>7.5.4:  Experimental Setup:</strong></p>
+<ul>
+  <li>For Optocoupler<strong>:</strong></li>
+</ul>
+<p align="center"><strong><img width="527" height="348" src="clip_image002_0021.jpg"></strong></p>
+<p align="center"><strong><img width="317" height="165" src="clip_image004_0012.jpg"></strong></p>
+<p>b) For LDR:<br>
+  <img width="433" height="321" src="clip_image006_0008.jpg"><br>
+  <strong></strong><br>
+  <strong>7.5.5: Theory:</strong></p>
+<p>The relays are not recommended for  low level switching operations, where load is in the range of micro amperes or  a few mill amperes with open circuit voltage less than 10 mill volts. Special  relays for such low switching applications can be available on special demand.<br>
+  MCT 2E is an IC whose  internal configuration is as shown in the figure. It consists of an LDR and a  photo sensitive transistor. When a voltage is applied to the LDR, the LDR emits  light. The light is sensed by a photo transistor rand is turned on and hence a  collector current IC flows. LDR is also a photo device whose resistance varies  with variation in its illumination. Its resistance decreases with increase in  intensity of light, and accordingly the relay also gets on and off.</p>
+<p><strong>7.5.6: Deign: </strong><br>
+  Relay driving circuit using LDR<br>
+  Pick up current(Ic) should be such that it  should turn on relay.<br>
+  Let Ic= 30 A <br>
+  IB=Ic/b= 300/100= 0.3 mA.<br>
+  <br>
+  From the circuit, when the LDR is  exposed to light,<br>
+  <u>12 V (relay voltage) </u>* R1 = 0.3  mARB +0.7<br>
+  3 K+1                        <br>
+  <br>
+  Let LDR be exposed to light, the relay will be  on and when LDR is not exposed to light, the relay will be off.<br>
+  Designed values:</p>
+<p><strong>               </strong><u>         9     </u>*    R1 = (0.3 mA * 1K) + 0.7<br>
+  <strong>             </strong>10.5 K+R1</p>
+<p><strong>                 </strong>9R1= 10.5 K+ R1<br>
+  R1= 1.3 KW.</p>
+<p> Relay driving circuit using MCT 2E<br>
+  Ic= 150 mA</p>
+<p>         IB = <u>Ic</u> =   <u>150 </u>= 1.5 mA </p>
+<ul>
+  <ul>
+    <li>100</li>
+  </ul>
+</ul>
+<p> Consider the loop,<br>
+  <br>
+  <u>     6 V         </u>*   4.7 K = 1.5 mA RB +  0.7 <br>
+  (470 + 4.7 K)</p>
+<p>             RB = 3.169 KW.<br>
+  <strong>                 </strong><br>
+  <strong>7.5.7: Procedure:</strong></p>
+<ul>
+  <li>Circuit connections are made as  per the circuit diagram  </li>
+  <li>Connect the Optocoupler IC  using transistor and relay</li>
+  <li>Note down the relay positions  for two input states.</li>
+  <li>Now connect LDR using  transistor and relay.</li>
+  <li>Note down the relay positions  for different illuminations of LDR.</li>
+</ul>
+<p><strong>                                                             </strong><br>
+  <strong>7.5.8:  Table of observation:</strong><br>
+  <strong>  For LDR:</strong><br>
+  <strong> </strong>When the relay is  connected to normally open<br>
+  The  relay is ON when -- - - - - - - - - - - - ---<br>
+  The  relay is OFF when - - - - - - - - - -- - - <br>
+  <strong>For</strong> <strong>MCT 2E</strong><br>
+  <strong> </strong>When pin no.1 is  connected to 0V, - - - - - - - <br>
+  When pin no.1 is connected to 5V, - - - -  - -- -- </p>
+<p><strong>7.5.9:  Specimen calculations:             ---- Not  required ------</strong><br>
+  <strong>7.5.10:  Plotting the graph:                 ----- Not  required-----</strong><br>
+  <strong>7.5.11: Discussion  and conclusion: </strong><strong> </strong><br>
+  <strong>             </strong>Hence  we see how the relay is driven by different photo devices like LDR and Optocoupler,  which operates at low current.</p>
+</body>
+</html>

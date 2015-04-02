@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.front"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+<uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:icon="@drawable/logo"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".expt2"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity android:name=".FrontActivity"/>
+         <activity android:name=".ex1"/>
+        <activity android:name=".theory"></activity>
+   <activity android:name=".differentiator"></activity>
+      <activity android:name=".integrator"></activity>
+        <activity android:name=".difft"></activity>
+            <activity android:name=".intgd"></activity>
+        <activity android:name=".intgt"></activity>
+         <activity android:name=".webview"/>
+      <activity android:name=".tabulation2" />
+        <activity android:name=".design2" />
+          <activity android:name=".LicActivity"/>
+          
+        <activity android:name=".design3"/>
+        <activity android:name=".tabulation4"/>
+        <activity android:name=".design4"/>
+        <activity android:name=".tabulation3"/>
+         <activity android:name=".LictwoActivity"/>
+         <activity android:name=".design6"/>
+        <activity android:name=".tabulation6"/>
+         <activity android:name=".design8"></activity>
+        <activity android:name=".theory"></activity>
+         <activity android:name=".tabulaton8"></activity>
+           <activity android:name=".design11"></activity>
+        <activity android:name=".theory2"></activity>
+         <activity android:name=".tabulaton11"></activity>
+          <activity android:name=".w1"></activity>
+           <activity android:name=".w2"></activity>
+            <activity android:name=".w3"></activity>
+             <activity android:name=".w4"></activity>
+             
+             <activity android:name=".cs1"></activity>
+             <activity android:name=".cst1"></activity>
+             <activity android:name=".csd1"></activity>
+              <activity android:name=".cs2"></activity>
+             <activity android:name=".cst2"></activity>
+             <activity android:name=".csd2"></activity>
+         
+    </application>
+<uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+ 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+</manifest>

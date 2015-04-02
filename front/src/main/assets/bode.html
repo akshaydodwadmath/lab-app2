@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p><strong>7.2.1 : A) Title  of the experiment: </strong>Frequency response of a lead  network<strong></strong></p>
+<p><strong>7.2.2: Aim of  the experiment: </strong>To determine frequency response of  a lead <br>
+  network.<strong></strong></p>
+<p><strong>7.2.3:</strong> <strong>List of  equipments:</strong></p>
+<p><strong>          </strong>     Sl No.         Item                       Specification                    Quantity </p>
+<p>                1)              A F O                    10Hz –1 M Hz/15Vrms                1          <br>
+  2)              C R O                    0-20 MHz/80 Vpp                        1<br>
+  3)              Capacitor               0.1micro Farad                             1<br>
+  4)               Resistor                 6 k, 1.2 k                                       1each<br>
+</p>
+<p><strong>7.2.4:  Experimental Setup:</strong></p>
+<p align="center"><strong><img width="245" height="127" src="clip_image002_0006.jpg"></strong><br>
+  <strong>7.2.5: Theory:</strong></p>
+<p>The primary function of lead compensator is to reshape  the frequency response curve to provide sufficient phase lead angle to set the  excessive phase –lag       associated  with components of the fixed system. <br>
+  The transfer function for the lead network is  given by</p>
+<p>Vo(s)                  R2<br>
+  ------ -- = ------------------------<br>
+  Vi(s)                      R1/SC<br>
+  R2 +   -----------<br>
+  R1+1/Sc</p>
+<p>    (S+1/R1C)<br>
+  = -------------<br>
+  S + 1/R2/(R1+R2) R1C</p>
+<p>                            R2<br>
+  τ = RIC       α = -------  <br>
+  R1+R2 &lt; 1  </p>
+<p><strong>7.2.6:  Design equations:</strong></p>
+<p>            Let Qm = 450<br>
+  1- α<br>
+  Sin Φm=   --------<br>
+  1+ α <br>
+  α = 0.17<br>
+  R2                                                                                               <br>
+  α = ---------                                         <br>
+  R1+ R2 <br>
+  <br>
+  R2<br>
+  0.17 =    ---------         ------------ (1)<br>
+  R1+R2  </p>
+<p>              1                                                                               <br>
+  W = ----------- rad/sec                          <u></u><br>
+  τ√ α                                                                   </p>
+<p>            1                                                      <br>
+  f = -----------<br>
+  2 Π τ√ α    </p>
+<p>Let f = 650 Hz    and α=0.17<br>
+  τ = 0.593x10-3</p>
+<p>            we have τ = R1x (0.1 x 10-6) F<br>
+  R1 = 5.93<br>
+  R1=6K<br>
+  From equation 1, 0.17=R2/(6K+R2)<br>
+  R2= 1.2KΩ</p>
+<p>Designed Values:<br>
+  α = 0.17<br>
+  f = 650 Hz<br>
+  C= 0.1 μF<br>
+  R1 = 6 KΩ<br>
+  R2 = 1.2 KΩ<br>
+  The sinusoid T.F can be written as<br>
+  1+jwT<br>
+  Gc (jw) = -------------        α &lt;1<br>
+  1 + jαwT</p>
+<p>Since α &lt;1 the N/W o/p leads the sinusoid input under study state  hence the name lead compensator<br>
+  The phase lead W is given by<br>
+  Φ= tan-1w τ – tan-1 α w τ<br>
+  <br>
+  tan-1(1-β)                                         1<br>
+  Φ =   -------------                          wm  = --------<br>
+  1+ α w2 τ2                                                         τ√ α</p>
+<p>At w = wm              tan Φm = (1- α) / 2√ α<br>
+  Sin Φm = (1- α) / (1+ α)</p>
+<p>            1 – Sin Φm<br>
+  α =   ---------------<br>
+  1+ Sin Φm<br>
+  <strong>7.2.7: Procedure:</strong></p>
+<ol>
+  <li>Circuit connections are made as  per circuit diagram. </li>
+  <li>The input is given through AFO  and the output is observed on CRO. </li>
+  <li>The input voltage is kept  constant &amp; the output voltage &amp; phase are noted down </li>
+</ol>
+<p>        at varying input  frequencies.</p>
+<ol>
+  <li> Plot of frequency v/s phase &amp;frequency v/s  output voltage is plotted</li>
+</ol>
+<p><strong>7.2.8:</strong>   <strong>Table of observation:</strong><br>
+  <em>    Frequency   response</em></p>
+<p>   Vin = 1V(constant)</p>
+<table border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="156" valign="top"><p>          Fin (Hz)                                                                             <strong></strong></p></td>
+    <td width="180" valign="top"><p>           Vout (volts)<strong></strong></p></td>
+    <td width="144" valign="top"><p>       Phase (degrees)<strong></strong></p></td>
+  </tr>
+  <tr>
+    <td width="156" valign="top"><p><strong>&nbsp;</strong></p></td>
+    <td width="180" valign="top"><p><strong>&nbsp;</strong></p></td>
+    <td width="144" valign="top"><p><strong>&nbsp;</strong></p></td>
+  </tr>
+  <tr>
+    <td width="156" valign="top"><p><strong>&nbsp;</strong></p></td>
+    <td width="180" valign="top"><p><strong>&nbsp;</strong></p></td>
+    <td width="144" valign="top"><p><strong>&nbsp;</strong></p></td>
+  </tr>
+</table>
+<p><strong>&nbsp;</strong></p>
+<p><strong>7.2.9:  Specimen calculations:</strong> <strong>---- Not required ------</strong></p>
+<p><strong>7.2.10: Plotting of graph: </strong></p>
+<p><img width="130" height="98" src="clip_image003.gif"><img width="143" height="86" src="clip_image004_0000.gif"><strong>&nbsp;</strong></p>
+<br clear="ALL">
+<p>    Gain Vs frequency      gain                                              phase<br>
+  Phase Vs frequency <br>
+  <img width="146" height="2" src="clip_image005.gif"><img width="170" height="2" src="clip_image006_0000.gif">&nbsp;</p>
+<br clear="ALL">
+<br>
+                                                                      freq                                                   freq<br>
+                                                                                                                                      
+<p><strong>7.2.11: Conclusion:        </strong></p>
+<p>By conducting the above expt, we can say that the  primary function of lead compensator is to reshape the frequency response curve  so as to provide sufficient phase lead angle.</p>
+</body>
+</html>

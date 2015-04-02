@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p><strong>7.11.1 :  Title of the experiment: </strong>Nyquist diagram using MAT LAB software.<strong></strong></p>
+<p><strong>7.11.2: Aim of the experiment: </strong>Plotting of Nyquist diagram for  the given transfer function and verification using theoretical calculations,  Using MAT LAB software<strong> .</strong><br>
+  .</p>
+<p><strong>7.11.3 : List of equipments required to conduct the experiment with  their</strong>                       <br>
+  <strong>Specification:</strong><br>
+  <strong>            </strong>Pentium  based PC and MATLAB software version 5.1 or 6.1</p>
+<p><strong>7.11.4:  Experimental setup  with naming of all parts:  </strong><strong>---- Not required ------ </strong><br>
+  <strong>            </strong><br>
+  <strong>7.11.5: Theoretical background for the experiment/validation of the  experiment:</strong><br>
+  The map  locus obtained in F plane by mapping all the points on Nyquist path with the  help of given transfer function is called Nyquist plot.<br>
+  The concept  of Nyquist diagram is based on polar plot which can be conveniently applied to  the stability analysis for any kind of system. It utilizes mapping theorem  effectively to develop a criterion to study the stability of control system in  frequency domain.</p>
+<ul>
+  <ul>
+    <ul>
+      <li><strong>: Design: ---- Not  required ------</strong></li>
+    </ul>
+  </ul>
+</ul>
+<p><strong>7.11.7: Procedure to carry out the experiment: </strong><br>
+  The following program is entered, </p>
+<p>%Rig  Nyquist plot<br>
+  num = [ 0      0      0    10   ]  <br>
+  den = [ 1     3        2     0  ] <br>
+  Nyquist (num, den):<br>
+  V= [-4   4   4   4]<br>
+  % axis (V)  <br>
+  Grid<br>
+  Zoom on<br>
+  Tittle (&lsquo;Nyquist Plot &lsquo; )<br>
+  xlabel (&ldquo;Real axis &ldquo;)<br>
+  ylabel (&ldquo;Imaginary axis &ldquo;)</p>
+<p><strong>7.11.8 :  Table of observation:           </strong><strong>---- Not required ------ </strong></p>
+<p><strong>7.119:  Specimen calculations:</strong>                             <br>
+  10<br>
+  G (S) = --------------<br>
+  S(S+1) (S+2)</p>
+<p>Step 1: No. of poles on right side = 0<br>
+  Step 2:  N=P=0 for Stability<br>
+  10 <br>
+  Step3:  H (jw) G (jw) =  ------------------------<br>
+  (jw) (jw + 1)(jw + 2)<br>
+</p>
+<ul>
+  <ul>
+    <li>= <u>tan-1 0/10</u></li>
+  </ul>
+</ul>
+<p>             tan-1  w/0 tan-1 w/1 tan-1 w/2<br>
+  = -90- tan –1w- tan-1 w/2</p>
+<p>for w= +¥, 0&lt;  -270<br>
+  w= +0,   ¥&lt; -90<br>
+  Anticlockwise rotation<br>
+  And<br>
+  for w= +0, ¥&lt;-90<br>
+  w= -0,   ¥&lt;+90<br>
+  Anticlockwise rotation.</p>
+<p>Step4: Rationalizing G (jw) H (jw)<br>
+  Wpc = Ö2 and point Q= -1.66.<br>
+  <br>
+  Step5: The number of encirclements of -1+j0 are, N=2 but for  stability N=0<br>
+  <br>
+  Therefore given system is unstable. </p>
+<p><strong>7.11.10:  Plotting the Graph:            </strong><br>
+  <strong><img width="178" height="123" src="clip_image002_0009.jpg"></strong></p>
+<p><strong>7.11.11:  Discussion of results and conclusion:</strong> <br>
+  From the above experiment it has been observed that  using MATLAB analysis of Nyquist diagram can be made very easily.<br>
+  From the above experiment we have also observed that the position of  poles will decide about the stability of the system.</p>
+</body>
+</html>

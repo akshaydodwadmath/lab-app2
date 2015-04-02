@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p><strong>7.9.1: Title  of the experiment: </strong>Root locus with compensation, using MAT LAB software.</p>
+<p><strong>7.9.2: Aim of the experiment:</strong> Plotting of Root Locus with  compensation for   <br>
+  <strong>              </strong>the given  transfer function and verification using theoretical calculations, Using MAT  <br>
+  LAB software<strong>.</strong></p>
+<p>       <br>
+  <strong>7.9.3: List of equipments required to conduct the experiment with  their</strong>                       <br>
+  <strong>Specification:</strong><br>
+  Pentium based PC and MATLAB  software version 5.1 or 6.1</p>
+<p><strong> 7.9.4: Experimental setup with naming of all  parts:</strong><strong> ---- Not  required ------</strong></p>
+<p><strong>7.9.5: Theoretical background for the experiment/validation of the  experiment:           </strong><br>
+  <strong>             </strong> In any closed loop system the  movement of closed loop poles with small changes in the parameters of the  system greatly helps in the design of any closed loop system. Such movement of  poles can be known by the root locus method. Practice of this provides a  graphical method of plotting the locus of the roots in the S-plane has a given  system parameter is varied over the complete range of values. The roots  corresponding to a particular value of the system parameter can be located on  the locus. The value of the parameter for a desired root location can be  determined from the locus. This technique brings into focus the complete  dynamic response of the system. The locus also provides a measure of the  sensitivity of roots pf the variation in the parameters.<br>
+  <strong>7.9.6: Design:</strong><strong> ---- Not required ------ </strong></p>
+<p><strong>7.9.7: Procedure  to carry out the experiment:</strong><br>
+  This program is entered,<br>
+  %   -Root locus plot ------- <br>
+  %    numerator and  denominators of the <br>
+  %      uncompensated systems <br>
+  num = [0      0          4 ]; <br>
+  den = [1      2          0] ;<br>
+  % numerator &amp; denominators of compensated <br>
+  %   systems <br>
+  numc = [0          0        1           2.9 ] ;<br>
+  denc= [1         7.4      10.8         0  ];<br>
+  %      Enter root locus  command &amp; plot root loci <br>
+  r = locus (num... den ) <br>
+  Plot (r, &lsquo;- &lsquo;) <br>
+  hold  <br>
+  r= rlocus (numc, denc )<br>
+  Plot (r, &lsquo; - -&lsquo; ) <br>
+  % axis   scaling <br>
+  v =  [- 4           4        - 4         4 ]; <br>
+  axis (v) <br>
+  grid <br>
+  title (&ldquo;Root locus of  compensated and uncompensated system &ldquo;) </p>
+<p>             <br>
+  <strong>7.9.8: Table  of observation:  </strong><strong>---- Not required ------</strong></p>
+<p><strong>7.9.9:  Specimen calculations:</strong>                           </p>
+<p> G(s) =    <u>4____       </u><br>
+  S(s+2) <br>
+  The closed loop T. F  becomes <br>
+  <br>
+  <u>C(s</u>)     =    <u>4______ </u><br>
+  R(S)         S2+2S+4 <br>
+  1 <br>
+  =   ---------------<br>
+  (S+1=j√ 3)(S+1-j√3) <br>
+  The closed poles  located at <br>
+  S=  -1 + j√3 <br>
+  -         </p>
+<p>The original system has open loop T.F G(s) then compensated system  will have T .F </p>
+<p>&nbsp;</p>
+<p>                                                S+1/ τ<br>
+  gc(s)  G(s) =( Kc --------    )   G (S) 0&lt; α &lt;1  <br>
+  S + 1/ α <br>
+  -----------------<br>
+  Gc (S)                       <br>
+  At desired closed loop pole the T.F G(s) having angle </p>
+<p>:   4<br>
+  ------       = -2100 <br>
+  S(s+2) <br>
+  s = -= + j2√3 <br>
+  Thus if we need to &amp; force root   locus to go through the desired closed loop pole .<br>
+  The lead compensator must  contribute Φ= 300  at this  point </p>
+<p>&nbsp;</p>
+<p>Zero  at S=-2.9   pole=5.7 <br>
+  1                          1   <br>
+  T= -----            α T = ------ = 0.176 <br>
+  2.9                       5.7 <br>
+  1<br>
+  =O.345      α = --------    =0.508 <br>
+  5.7x0.345 <br>
+  then open loop transfer function is  </p>
+<p>&nbsp;</p>
+<p>                      Kc(S+2.9)          4 <br>
+  Gc(s)G(s)=  -------------      --------<br>
+  S+5.7       ( S+2)S<br>
+  <br>
+  K (S+2.9)  <br>
+  Gc (S) G(S)  =  -----------------<br>
+  S(S+2) (S+5.7)</p>
+<p>Where K = 4 Kc<br>
+  K can be evaluated  by </p>
+<p>          K (S+2.9) <br>
+  --------------     <br>
+  S (S+2)(S+5.4) <br>
+  S=2+ j√3(2)  <br>
+  -    <br>
+  K=19.59 <br>
+  19.6 (  S+2.9)<br>
+  ;Gc (s) G(s)=---------------        <br>
+  S(S+2)(S+5.7) <br>
+  Kc of the lead compensator is  <br>
+  <br>
+  Kc =<u>19.6 </u>= 4.9  <br>
+  4  <br>
+  The lead compensator T.F becomes <br>
+  Gc(s)=2..48  <u>0.345S+1</u>  = 4.86 (<u>S+2.9)</u><br>
+  0.176+1                (S+5.68) <br>
+  The static velocity error constant Kv is obtained from the  expression  </p>
+<p>                           Kv=     lim    SGs (s) G(s) <br>
+  S-&gt;0 </p>
+<p>                               = lim     S   <u>19.6 (S+2.9)  </u><br>
+  S-&gt;0        S(+2) (S+5.7) <br>
+  = 4.98 <br>
+  = 5sec-1</p>
+<p>&nbsp;</p>
+<p><strong>7.9.10: </strong><strong>Plotting of Graph:</strong>  <br>
+  <strong><img width="210" height="151" src="clip_image002_0007.jpg"></strong><strong> </strong><br>
+  <strong>7.9.11:  Discussion and conclusion:</strong><br>
+  <strong>            </strong>From the above experiment it  has been observed that MATLAB will take less computational time for the root  locus compensation.</p>
+</body>
+</html>
